@@ -45,7 +45,7 @@ class DrawCanvas(tk.Tk):
         col = event.x // self.pixel_size
         row = event.y // self.pixel_size
 
-        brush_size = 3  # Must be odd: 1, 3, 5, etc.
+        brush_size = 3
         offset = brush_size // 2
 
         for dy in range(-offset, offset + 1):
